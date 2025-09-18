@@ -95,7 +95,7 @@ unidades_permitidas_norm = set(normalize_text(u) for u in unidades_permitidas)
 
 # ---------------- NOVA INTERFACE DO STREAMLIT ----------------
 st.set_page_config(layout="wide")
-st.title("Identificação de Cotas Não Utilizadas para Redistribuição - I GERES")
+st.title("Perca Primária - I GERES")
 
 st.markdown("---")
 st.header("Carregamento de Arquivos")
@@ -212,3 +212,4 @@ if uploaded_file_cotas is not None and uploaded_file_fila_pacientes is not None:
         st.error(f"Ocorreu um erro durante o processamento. Verifique os arquivos e os dados. Detalhe do erro: {e}")
 else:
     st.warning("Por favor, carregue ambos os arquivos CSV para iniciar o processamento.")
+
